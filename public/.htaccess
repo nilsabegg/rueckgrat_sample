@@ -1,0 +1,7 @@
+#AddHandler php53-cgi .php
+
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !\.(jpg|jpeg|gif|png|css|js|pl|txt)$
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,PT,L]

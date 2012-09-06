@@ -1,0 +1,18 @@
+AddHandler php53-cgi .php
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all other URLs to index.php/URL
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,PT,L]
+
+AuthType Basic
+AuthName "Bitte Zugangsdaten eingeben"
+AuthUserFile /www/htdocs/w007b2f9/homes/comesback/.htpasswd
+Require user ffuf
+</IfModule>
+#<IfModule !mod_rewrite.c>
+#	ErrorDocument 404 index.php
+#</IfModule>

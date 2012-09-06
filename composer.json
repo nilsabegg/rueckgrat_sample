@@ -1,0 +1,6 @@
+{
+    "minimum-stability" : "dev",
+    "require": {
+        "ffuf/rueckgrat": "dev-master"
+    }
+}
