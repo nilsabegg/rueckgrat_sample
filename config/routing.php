@@ -6,4 +6,4 @@ $routing = array(
 
 $default['controller'] = 'Index';
 $default['action'] = 'index';
-$_SERVER['SERVER_NAME'] = 'localhost/rueckgrat_sample';
+$_SERVER['SERVER_NAME'] = 'php.dev/development_server/public';

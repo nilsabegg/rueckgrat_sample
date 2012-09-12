@@ -1,6 +1,6 @@
 <?php
 
-namespace Sample\Controller;
+namespace DevelopmentServer\Controller;
 
 use \Rueckgrat\Controller\Controller as Controller;
 
@@ -32,6 +32,9 @@ class Index extends Controller
     {
         $this->pimple['view.rootPath'] = 'index/index';
         $this->view = $this->pimple['view'];
+        $this->pimple['view.rootPath'] = 'index/_navigation';
+        $navigation = $this->pimple['view'];
+        $this->template->set('navigation', $navigation->render());
         $this->renderPage();
     }
 

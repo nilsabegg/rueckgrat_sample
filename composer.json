@@ -1,6 +1,21 @@
 {
     "minimum-stability" : "dev",
     "require": {
-        "ffuf/rueckgrat": "dev-master"
-    }
+        "ffuf/rueckgrat": "dev-master",
+        "twitter/bootstrap": "2.1.1"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "twitter/bootstrap",
+                "version": "2.1.1",
+                "dist": {
+                    "url": "http://twitter.github.com/bootstrap/assets/bootstrap.zip",
+                    "type": "zip"
+                },
+                "target-dir": "../../../etc/assets/bootstrap"
+            }
+        }
+    ]
 }

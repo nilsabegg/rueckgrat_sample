@@ -4,7 +4,7 @@ namespace Bitchradar\Model\Repository;
 
 use \Rueckgrat\Model\Repository as Repository;
 
-class Location extends Repository
+class Project extends Repository
 {
 
     public function getByWebsite($website) {
