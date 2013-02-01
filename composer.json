@@ -3,6 +3,7 @@
     "require": {
         "ffuf/rueckgrat": "dev-master",
         "twitter/bootstrap": "2.1.1"
+
     },
     "repositories": [
         {
