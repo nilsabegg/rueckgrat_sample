@@ -1,5 +1,7 @@
 <?php
 
+namespace ExampleApp\Model\Entity;
+
 /**
  * @Entity
  * @Table(name="example")
