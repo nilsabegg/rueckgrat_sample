@@ -28,6 +28,9 @@ class Index extends Controller
      */
     protected $secured = false;
 
+    /**
+     * @Route("/)
+     */
     public function index()
     {
         $this->pimple['view.rootPath'] = 'index/index';
